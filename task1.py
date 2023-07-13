@@ -7,3 +7,15 @@
 
 #Решение :
 
+
+def min_flips(coins):
+    heads = coins.count('H')
+    tails = coins.count('T')
+    
+    return min(heads, tails)
+
+n = int(input("Введите кол во"))
+coins = input().split()
+
+print(min_flips(coins))
+
