@@ -8,14 +8,19 @@
 #Решение :
 
 
-def min_flips(coins):
-    heads = coins.count('H')
-    tails = coins.count('T')
-    
-    return min(heads, tails)
-
-n = int(input("Введите кол во"))
-coins = input().split()
-
-print(min_flips(coins))
+n = int(input("Введите кол-во монет:"))
+eagle = 0
+tails = 0
+for i in range(n):
+    x  = int (input("Введите кол eagle или tails:"))
+    if x == 1 :
+        eagle += 1
+    else:
+        tails += 1
+if eagle < tails :
+    print(f' Орлом: , {eagle}')
+elif  eagle== tails:
+    print(f'Решкой: {eagle}')  
+else:
+    print(f' {tails}')
 
