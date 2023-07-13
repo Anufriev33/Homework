@@ -9,6 +9,6 @@ for i in range(n):
     power_of_two = 2 ** i
     if power_of_two <= n:
         print(power_of_two)
-    else:
-        break
+   
+        
 
